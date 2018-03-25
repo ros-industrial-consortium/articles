@@ -31,7 +31,7 @@ DDS has a pretty extensive list of deployments, with mission critical systems be
 [This website](http://www.opcconnect.com/) provides a good overview of the [commercially available SDKs](http://www.opcconnect.com/uakit.php) as well as of the 
 free (though not necessarily open source) [ones](http://www.opcconnect.com/uafree.php). A list of open source implementations is maintained at [this page](https://github.com/acplt/open62541/wiki/List-of-Open-Source-OPC-UA-Implementations). Among the listed ones, the following seem to be in active development status as of August 2015:
 
-- [open62541](http://open62541.org/): C, LGPL + static linking exception
+- [open62541](http://open62541.org/): C, MPL
 - [Node-OPCUA](http://node-opcua.github.io/): javascript & NodeJS, MIT License
 - [FreeOPCUA](http://freeopcua.github.io/): C++, LGPL
 - [python-opcua](https://github.com/FreeOpcUa/python-opcua), a sister project to FreeOPCUA implemented in pure python
