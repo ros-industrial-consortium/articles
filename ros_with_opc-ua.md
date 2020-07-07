@@ -83,7 +83,13 @@ as straightforwardly between ROS/DDS messaging (which can to a certain extent be
 
 OPC-UA prescribes Services as one of the fundamental interaction mechanisms, and they are apparently a direct counterpart to ROS services (i.e., a Request/Response comm mechanism).
 
-**TODO**: check whether a "native" OPC-UA construct exists for Actions.
+OPC-UA does not include Actions as they exist in ROS.
+However, OPC-UA does describe Programs in part 10 of the specification.
+OPC-UA Programs are general finite state machines that run on an OPC-UA server.
+A *ROS* Action server implements Actions as a specific kind of a finite state machine.
+For more details, see this ROS2 [design documentation on Actions](http://design.ros2.org/articles/actions.html).
+It's plausible that an OPC-UA server could implement ROS Action-like behavior in the form of an OPC-UA Program. 
+Both ROS Actions and OPC-UA Programs are intended to support interruptible, potentially long-duration tasks on the server.
 
 ### Language Support
 
